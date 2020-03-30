@@ -1,9 +1,7 @@
 .input-base {
   height: 3rem;
-  width: 100%;
   font-size: 2rem;
   bottom: 2rem;
-  align-self: flex-end;
   border-radius: 1rem;
   outline: none;
   padding-left: 1rem;
@@ -12,7 +10,16 @@
   border: none;
   box-shadow: inset 2px 2px 0 $right-color, inset -2px -2px 0 $left-color;
   transition: background-color 0.3s ease;
-  &:focus {
+  &:focus,
+  &:hover {
     background-color: $focus-color;
+  }
+}
+
+.input-disabled {
+  box-shadow: 2px 2px 0 $right-color, -2px -2px 0 $left-color;
+  &:focus,
+  &:hover {
+    background-color: $base-color;
   }
 }

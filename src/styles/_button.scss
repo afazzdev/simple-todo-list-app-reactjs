@@ -1,0 +1,11 @@
+.button-base {
+  background-color: $base-color;
+  border: none;
+  box-shadow: 2px 2px 2px $right-color, -2px -2px 2px $left-color;
+  border-radius: 1rem;
+  outline: none;
+  margin-left: 1rem;
+  &:active {
+    box-shadow: inset 2px 2px 2px $right-color, inset -2px -2px 2px $left-color;
+  }
+}

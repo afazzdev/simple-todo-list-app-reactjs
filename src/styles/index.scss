@@ -1,6 +1,7 @@
 @import './variables';
 @import './card';
 @import './textField';
+@import './button';
 
 body {
   margin: 0;
@@ -20,6 +21,7 @@ code {
 
 input,
 select,
-textarea {
+textarea,
+button {
   color: $text-color;
 }
