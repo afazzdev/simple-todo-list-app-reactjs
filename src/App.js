@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     axios.get(URL).then((res) => {
       setState(res.data.data);
-      console.log(res);
+      // console.log(res);
     });
   }, []);
 
@@ -27,7 +27,7 @@ function App() {
       .delete(`${URL}/${id}`)
       .then((res) => {
         setState(newState)
-        console.log(res)
+        // console.log(res)
       })
       .catch((err) => console.log('err', err))
   }
@@ -40,7 +40,7 @@ function App() {
     axios
       .post(URL, input)
       .then((res) => {
-        console.log(res)
+        // console.log(res)
         setInput(initialValue)
         setState([
           ...state,
