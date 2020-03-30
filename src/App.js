@@ -4,7 +4,7 @@ import Card from './components/Card';
 import TextField from './components/TextField';
 import Button from './components/Button';
 
-const URL = 'http://localhost:8000/api/v1/todo';
+const URL = 'https://zi-todo-list.herokuapp.com/api/v1/todo';
 
 const initialValue = { name: '' }
 
