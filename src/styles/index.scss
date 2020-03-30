@@ -25,3 +25,27 @@ textarea,
 button {
   color: $text-color;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $focus-color;
+  box-shadow: inset 5px 5px 5px $right-color, inset -5px -5px 5px $left-color;
+  border-radius: '1rem'
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $base-color;
+  box-shadow: 5px 5px 5px $right-color, -5px -5px 5px $left-color;
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $base-color;
+}

@@ -8,6 +8,7 @@ const TextField = ({
   InputProps,
   value,
   onChange,
+  style,
   ...rest
 }) => {
   return (
@@ -16,6 +17,7 @@ const TextField = ({
         alignSelf: 'flex-end',
         width: '100%',
         display: 'flex',
+        ...style
       }}
       {...rest}
     >
@@ -24,6 +26,7 @@ const TextField = ({
         fullWidth
         value={value}
         onChange={onChange}
+        name={name}
         {...InputProps}
       />
       {endAdornment}
