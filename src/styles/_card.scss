@@ -1,0 +1,13 @@
+.card-container {
+  height: 80vh;
+  width: 600px;
+  padding: 2rem;
+  margin: auto;
+  margin-top: 5vh;
+  background-color: $base-color;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 5px $right-color, -5px -5px 5px $left-color;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
